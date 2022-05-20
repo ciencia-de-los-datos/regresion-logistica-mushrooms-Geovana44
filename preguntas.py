@@ -124,6 +124,7 @@ def pregunta_03():
     from sklearn.pipeline import Pipeline
     from sklearn.linear_model import LogisticRegressionCV
     from sklearn.preprocessing import OneHotEncoder
+
     # Cargue las variables.
     X_train, X_test, y_train, y_test = pregunta_02()
     
@@ -143,7 +144,7 @@ def pregunta_03():
     )
  
     # Entrene el pipeline con los datos de entrenamiento.
-    pepeline.fit(X_train, y_train)
+    pipeline.fit(X_train, y_train)
 
     # Retorne el pipeline entrenado
     return pipeline
